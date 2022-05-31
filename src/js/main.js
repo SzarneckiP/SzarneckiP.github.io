@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('.navbar-toggler')
     const navbarLinks = document.querySelector('.navbar-collapse')
     const currentDate = document.querySelector('.current-date')
+   
 
     const removeShowClass = () => {
         if (navbarLinks.classList.contains('show')) {
@@ -37,4 +38,18 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.classList.add('shadow-bg')
     })
     window.addEventListener('scroll', addShadow)
+
+    const delDelayInSmallScreens = () => {
+        const projectCard = document.querySelectorAll('.project-card')
+        if(window.innerWidth < 768) {
+            projectCard.forEach(delay => {
+                delay.removeAttribute('data-aos-delay')
+            })
+        }
+    }
+
+    delDelayInSmallScreens()
 })
+
+
+
