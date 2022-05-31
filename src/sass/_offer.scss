@@ -1,4 +1,9 @@
 .offer {
+
+    .description {
+        font-size: 24px;
+    }
+
     .offer-hero {
         position: relative;
         background-image: url('/dist/img/offer/hero-offer.jpg');
@@ -26,10 +31,6 @@
         font-size: 3.6rem;
         text-transform: uppercase;
         text-shadow: 0 0 5px white;
-    }
-
-    .offer-section {
-        font-size: 24px;
     }
 
     .accordion-button:not(.collapsed) {
