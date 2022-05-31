@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-color: $bg-color;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-padding-top: 83px;
+}
+
+.shadow-bg {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.subtitle {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        border-left: 5px solid $main-color;
+        font-weight: 200;
+        padding: 0 20px;
+        text-align: center;
+    }
+}
+
+.contact-link,
+.offer-link {
+    color: $main-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $main-color;
+        text-decoration: underline;
+    }
+}
+
+
+nav {
+    z-index: 100;
+    transition: color .6s;
+    transition: background-color .6s;
+
+    .nav-link {
+        text-transform: uppercase;
+        padding: 10px 0;
+    }
+
+    .navbar-brand,
+    .nav-link {
+        color: $white;
+        font-size: 18px;
+
+        &:hover,
+        &:focus {
+            color: $main-color;
+        }
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+    }
+
+    .active {
+        color: $main-color;
+    }
+
+    .navbar-toggler {
+        padding: 10px 20px;
+        border: 3px solid $white;
+
+        &:hover {
+            border: 3px solid $main-color;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        i {
+            color: $white;
+            font-size: 25px;
+        }
+    }
+}
+
+header {
+    color: white;
+
+    h1 {
+        font-size: 40px;
+
+        .brand-name:hover {
+            color: $main-color;
+        }
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .hero-img {
+        position: relative;
+        background-image: url('/dist/img/hero-img.min.jpg');
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 0;
+
+        i {
+            position: absolute;
+            font-size: 26px;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: $main-color;
+        }
+    }
+
+    .hero-shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        z-index: -10;
+    }
+
+    .hero-text {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+    }
+
+    .btn {
+        padding: 5px 30px;
+        font-size: 20px;
+    }
+}
+
+.aboutus {
+    text-align: center;
+
+    .aboutus-img {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .aboutus-title {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .aboutus-description {
+        font-size: 20px;
+    }
+}
+
+.aboutus-hero {
+    background-image: url('/dist/img/furniture-liv-room.min.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: $white;
+    z-index: 0;
+
+    .aboutus-shadow {
+        position: absolute;
+        background-color: rgba(0, 0, 0, .7);
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+    }
+
+    .aboutus-card-title {
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+
+    i {
+        font-size: 36px;
+    }
+
+    .fa-puzzle-piece {
+        transform: rotate(-15deg);
+    }
+
+    .aboutus-card-text {
+        font-size: 20px;
+    }
+}
+
+.achievements {
+    .odd {
+        background-image: linear-gradient($main-color, $main-light-color);
+    }
+
+    .even {
+        background-image: linear-gradient($dark-gray, $middle-gray);
+    }
+
+    .achievements-list {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .achievement {
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-shadow: 0 0 15px black;
+
+            i {
+                padding: 10px;
+                font-size: 58px;
+            }
+
+            .achievement-title {
+                font-size: 25px;
+            }
+
+            .achievement-text {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.portfolio {
+    background-color: $light-gray;
+
+    .carousel-item {
+        position: relative;
+        height: 500px;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .8);
+        padding: 40px 0;
+    }
+
+    .carousel-indicators {
+        padding-bottom: 20px;
+    }
+
+    .carousel {
+
+        .bath,
+        .bench {
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 90%;
+        }
+
+        .kitchen,
+        .stairs,
+        .living-room,
+        .car {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .portfolio-card {
+        img {
+            height: 222px;
+        }
+    }
+}
+
+.common-info {
+    p {
+        font-size: 22px;
+
+        a {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (min-width: 575px) {
+    header {
+        .hero-img {
+            background-image: url('/dist/img/hero-img.jpg');
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .aboutus-hero {
+        background-image: url('/dist/img/furniture-liv-room.jpg');
+    }
+}
+
+@media (min-width: 768px) {
+    .aboutus {
+
+        .aboutus-title {
+            font-size: 22px;
+        }
+
+        .aboutus-description {
+            padding: 10px;
+            font-size: 18px;
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    html {
+        scroll-padding-top: 85px;
+    }
+
+    .aboutus {
+        text-align: start;
+
+        .aboutus-title {
+            font-size: 28px;
+        }
+
+        .aboutus-description {
+            padding: 10px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .aboutus {
+
+        .aboutus-title {
+            font-size: 32px;
+        }
+
+        .aboutus-description {
+            padding: 20px;
+            font-size: 22px;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .aboutus {
+
+        .aboutus-title {
+            font-size: 38px;
+        }
+
+        .aboutus-description {
+            padding: 20px;
+            font-size: 24px;
+        }
+    }
+}
