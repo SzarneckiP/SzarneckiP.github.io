@@ -72,6 +72,77 @@
     }
 }
 
+.modals {
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .active-modal {
+        display: block;
+    }
+
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: 20% auto;
+        padding: 10px;
+        border: 1px solid #888;
+        width: 90%;
+
+        .modal-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .close {
+        top: -7px;
+        right: -7px;
+        padding: 10px 20px;
+        position: absolute;
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 576px) {
+    .modals {
+        .modal-content {
+            margin: 15% auto;
+            padding: 20px;
+            width: 80%;
+
+            .modal-title {
+                font-size: 28px;
+            }
+        }
+
+        .close {
+            top: 2px;
+            right: 2px;
+        }
+    }
+}
+
+
 @media (min-width: 768px) {
     .offer {
         .accordion {
@@ -103,6 +174,25 @@
             }
         }
     }
+
+    .modals {
+        .modal-content {
+            margin: 10% auto;
+        }
+
+        .close {
+            top: 7px;
+            right: 20px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .modals {
+        .modal-content {
+            margin: 7% auto;
+        }
+    }
 }
 
 @media (min-width: 1200px) {
@@ -110,48 +200,3 @@
         margin: 20px 100px;
     }
 }
-
-
-
-// MODAL SCSS
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-
-  .active-modal {
-      display: block;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
