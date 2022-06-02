@@ -387,7 +387,7 @@
                                 <p class="card-text">This is a longer card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
                             </div>
-                            <div class="card-text p-2 ps-3 text-end"><button id="btnProjectBed" class="btn btn-danger">Pokaż
+                            <div class="card-text p-2 ps-3 text-end"><button id="btnProjectBed" class="btn btn-danger" onclick="openModal('modalProjectBed')">Pokaż
                                     więcej</button>
                             </div>
                         </div>
@@ -400,7 +400,7 @@
                                 <p class="card-text">This is a longer card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
                             </div>
-                            <div class="card-text p-2 ps-3 text-end"><button class="btn btn-danger">Pokaż więcej</button>
+                            <div class="card-text p-2 ps-3 text-end"><button id="btnProjectShelf" class="btn btn-danger" onclick="openModal('modalProjectShelf')">Pokaż więcej</button>
                             </div>
                         </div>
                     </div>
@@ -411,7 +411,7 @@
                                 <h5 class="card-title">Projekt łóżka</h5>
                                 <p class="card-text">This is a short card.</p>
                             </div>
-                            <div class="card-text p-2 text-center"><button class="btn btn-danger">Pokaż więcej</button>
+                            <div class="card-text p-2 text-center"><button class="btn btn-danger" id="1">Pokaż więcej</button>
                             </div>
                         </div>
                     </div>
@@ -424,7 +424,7 @@
                             </div>
                             <div class="card-footer d-flex justify-content-between align-items-center">
                                 <p class="m-0 p-0">Projekt Łóżka</p>
-                                <button class="btn btn-danger">Pokaż więcej</button>
+                                <button class="btn btn-danger" id="0">Pokaż więcej</button>
                             </div>
                         </div>
                     </div>
@@ -448,7 +448,16 @@
 
     <div id="modalProjectBed" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close text-end" onclick="closeModal()">&times;</span>
+            <h1>Project BED</h1>
+            <p>Some text in the Modal..</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+    <div id="modalProjectShelf" class="modal">
+        <div class="modal-content">
+            <span class="close text-end" onclick="closeModal()">&times;</span>
+            <h1>Project Shelf</h1>
             <p>Some text in the Modal..</p>
         </div>
     </div>
