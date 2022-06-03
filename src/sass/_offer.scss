@@ -104,6 +104,10 @@
         }
     }
 
+    .modal-description {
+        font-size: 18px;
+    }
+
     .close {
         top: -7px;
         right: -7px;
@@ -198,5 +202,17 @@
 @media (min-width: 1200px) {
     .accordion-body {
         margin: 20px 100px;
+    }
+
+    .modals {
+        .modal-content {
+            .modal-title {
+                font-size: 28px;
+            }
+        }
+
+        .modal-description {
+            font-size: 20px;
+        }
     }
 }
