@@ -69,10 +69,26 @@
 
     .projects {
         background-color: $white;
+
+        .card {
+            img {
+                object-fit: cover;
+                object-position: center;
+                height: 300px;
+            }
+        }
     }
 }
 
 .modals {
+    .carousel-item {
+        img {
+            object-fit: cover;
+            object-position: center;
+            max-height: 600px;
+        }
+    }
+
     .modal {
         display: none;
         position: fixed;
