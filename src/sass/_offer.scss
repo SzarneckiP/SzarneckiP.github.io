@@ -143,6 +143,58 @@
     }
 }
 
+#modalProjectStairsBasic {
+    .carousel-item {
+        img {
+            max-height: 250px;
+        }
+    }
+}
+
+#modalProjectWoodenTable {
+    .carousel-item {
+        img {
+            max-height: 250px;
+        }
+    }
+}
+
+#modalProjectOakBed {
+    .carousel-item {
+        img {
+            max-height: 197px;
+        }
+    }
+}
+
+#modalProjectProStairs {
+    .carousel-item {
+        img {
+            max-height: 245px;
+        }
+    }
+}
+
+#modalProjectCarBack {
+    .carousel-item {
+        img {
+            max-height: 150px;
+        }
+    }
+}
+
+@media (min-width: 320px) {
+
+    #modalProjectCarBack {
+        .carousel-item {
+            img {
+                max-height: 230px;
+            }
+        }
+    }
+}
+
+
 @media (min-width: 576px) {
     .modals {
         .modal-content {
@@ -158,6 +210,47 @@
         .close {
             top: 2px;
             right: 2px;
+        }
+    }
+
+    #modalProjectStairsBasic {
+        .carousel-item {
+            img {
+                max-height: 298px;
+            }
+        }
+    }
+
+    #modalProjectWoodenTable {
+        .carousel-item {
+            img {
+                max-height: 383px;
+            }
+        }
+    }
+
+    #modalProjectOakBed {
+        .carousel-item {
+            img {
+                max-height: 360px;
+            }
+        }
+    }
+
+    #modalProjectProStairs {
+        .carousel-item {
+            img {
+                max-height: 383px;
+            }
+        }
+    }
+
+
+    #modalProjectCarBack {
+        .carousel-item {
+            img {
+                max-height: 317px;
+            }
         }
     }
 }
@@ -203,6 +296,30 @@
         .close {
             top: 7px;
             right: 20px;
+        }
+    }
+
+    #modalProjectStairsBasic {
+        .carousel-item {
+            img {
+                max-height: 410px;
+            }
+        }
+    }
+
+    #modalProjectProStairs {
+        .carousel-item {
+            img {
+                max-height: 412px;
+            }
+        }
+    }
+
+    #modalProjectCarBack {
+        .carousel-item {
+            img {
+                max-height: 412px;
+            }
         }
     }
 }

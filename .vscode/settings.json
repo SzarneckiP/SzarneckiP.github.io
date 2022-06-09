@@ -1,3 +1,7 @@
 {
-    "cSpell.language": "en,pl,pl-PL"
+    "editor.defaultFormatter": null,
+    "cSpell.language": "pl,en,pl-PL",
+    "cSpell.words": [
+        "Stolar"
+    ]
 }
