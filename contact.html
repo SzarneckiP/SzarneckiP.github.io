@@ -65,24 +65,22 @@
                     <div class="col-md-12 col-lg-8">
                         <form class="text-start mx-4 contact-form"
                             action="https://formsubmit.io/send/siarniuk@gmail.com" method="POST">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control form-control-lg" id="name" placeholder="Imię"
-                                    required>
-                                <label for="name">Imię</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="E-mail" required>
-                                <label for="email">E-mail</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="subject" placeholder="Temat" required>
-                                <label for="subject">Temat</label>
-                            </div>
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Treść
+
+                            <label for="name">Imię</label>
+                            <input type="text" class="form-control form-control-lg" id="name" placeholder="Imię"
+                                required>
+
+
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+
+                            <label for="subject">Temat</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Temat" required>
+
+                            <label for="message">Treść wiadomości</label>
+                            <textarea class="form-control" placeholder="Treść
                                     wiadomości" id="message" style="height: 100px" required></textarea>
-                                <label for="message">Treść wiadomości</label>
-                            </div>
+
                             <input name="_formsubmit_id" type="text" style="display:none">
                             <button type="submit" class="btn btn-danger w-100 mt-3">Wyślij</button>
                         </form>
