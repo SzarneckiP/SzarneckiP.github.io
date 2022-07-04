@@ -359,4 +359,22 @@
             font-size: 20px;
         }
     }
+
+    #modalProjectTvShelf {
+        .modals {
+            .modal-description {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    #modalProjectCarBack {
+        .carousel-item {
+            img {
+                max-height: 500px;
+            }
+        }
+    }
 }
