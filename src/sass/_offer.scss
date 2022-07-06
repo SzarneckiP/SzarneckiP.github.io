@@ -260,7 +260,7 @@
     #modalProjectOakTable {
         .carousel-item {
             img {
-                max-height: 600px;
+                max-height: 500px;
             }
         }
     }
@@ -367,13 +367,45 @@
             }
         }
     }
+
+    #modalProjectOakBed {
+        .carousel-item {
+            img {
+                max-height: 360px;
+            }
+        }
+    }
 }
 
 @media (min-width: 1500px) {
+    #modalProjectOakBed {
+        .carousel-item {
+            img {
+                max-height: 500px;
+            }
+        }
+    }
+
     #modalProjectCarBack {
         .carousel-item {
             img {
                 max-height: 500px;
+            }
+        }
+    }
+
+    #modalProjectProStairs {
+        .carousel-item {
+            img {
+                max-height: 500px;
+            }
+        }
+    }
+
+    #modalProjectStairsBasic {
+        .carousel-item {
+            img {
+                max-height: 450px;
             }
         }
     }
