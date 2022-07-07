@@ -1,3 +1,20 @@
+.navbar {
+    .navbar-brand {
+        padding: 0;
+
+        img {
+            width: 115px;
+            height: 55px;
+            transition: opacity .3s;
+        }
+
+        img:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+
 .offer,
 .contact {
     .description {
