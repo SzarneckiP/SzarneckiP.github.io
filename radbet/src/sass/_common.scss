@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-color: $bg-color;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-padding-top: 71px;
+}
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -10;
+}
+
+.common-title {
+    .top-title {
+        color: $main-color;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    .sub-title {
+        font-size: 38px;
+        text-transform: uppercase;
+    }
+
+    .line-title {
+        width: 25%;
+        border-bottom: 3px solid $main-color;
+    }
+
+    .bottom-title {
+        font-weight: 200;
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+}
+
+.btn-custom {
+    color: white;
+    background-color: $main-color;
+    transition: background-color .2s, border-color .2s;
+
+    &:hover {
+        background-color: $main-light-color;
+        border-color: $main-light-color;
+    }
+}
+
+@media (max-width: 576px) {
+    .common-title {
+        .top-title {
+            color: $main-color;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+
+        .sub-title {
+            font-size: 34px;
+            text-transform: uppercase;
+        }
+
+        .line-title {
+            width: 25%;
+            border-bottom: 3px solid $main-color;
+        }
+
+        .bottom-title {
+            font-weight: 200;
+        }
+    }
+}
