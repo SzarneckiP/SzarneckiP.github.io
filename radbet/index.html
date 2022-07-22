@@ -14,25 +14,25 @@
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="68">
-    <nav class="navbar navbar-expand-lg top-fixed top-0">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="57">
+    <nav id="navbar" class="navbar navbar-expand-lg position-fixed w-100">
         <div class="container py-0">
-            <a class="navbar-brand" href="#">RADBET</a>
+            <a class="navbar-brand" href="index.html">RADBET</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto text-center">
-                    <a class="nav-link active" href="#">Strona Główna</a>
-                    <a class="nav-link" href="#">O nas</a>
+                    <a class="nav-link" href="#home">Strona Główna</a>
+                    <a class="nav-link" href="#aboutus">O nas</a>
                     <a class="nav-link" href="#">Pricing</a>
                     <a class="nav-link" href="#">Disabled</a>
                 </div>
             </div>
         </div>
     </nav>
-    <header class="hero" id="home">
+    <header id="home" class="hero">
         <div class="hero-img">
             <div class="shadow"></div>
             <div class="container h-100 text-light py-md-5 py-3">
@@ -49,8 +49,8 @@
                                     hurtownia budowlana.</p>
                             </div>
                             <div class="btns">
-                                <a href="*" class="btn btn-custom px-3 me-3 mb-2">nasza oferta</a>
-                                <a href="*" class="btn btn-outline-light mb-2">o nas</a>
+                                <a href="#offer" class="btn btn-custom px-3 me-3 mb-2">nasza oferta</a>
+                                <a href="#aboutus" class="btn btn-outline-light mb-2">o nas</a>
                             </div>
                         </div>
                     </div>
@@ -62,9 +62,9 @@
                 </div>
             </div>
     </header>
-    <section class="aboutus">
-        <div class="container h-100 py-5">
-            <div class="row h-100 align-items-start py-md-3 py-0">
+    <section id="aboutus" class="aboutus">
+        <div class="container h-100 py-md-5 py-3">
+            <div class="row h-100 align-items-start py-md-4 py-0">
                 <div class="col-sm-12 col-md-6">
                     <div class="left-side my-5 my-md-0">
                         <div class="common-title">
@@ -93,13 +93,56 @@
                         <p>Podchodzimy profesjonalnie do każdego zamówienia, zapewniając konkurencyjne ceny,
                             indywidualne wsparcie i pomoc w wyborze najlepszych produktów.
                         </p>
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <section class="aboutus-bricks text-light">
+        <div class="row w-100 m-0 p-0">
+            <div class="col-sm-12 col-md-6 col-xl-3 p-0 m-0">
+                <div class="brick advices common-title d-flex justify-content-end flex-column ps-3">
+                    <div class="shadow"></div>
+                    <div class="common-title">
+                        <h1 class="sub-title ">fachowe doradztwo</h1>
+                        <p class="line-title"></p>
+                        <p class="bottom-title">Fachowo doradzamy indywidualnie dla każdego klienta.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-3 p-0 m-0">
+                <div class="brick cashier-clients d-flex justify-content-end flex-column ps-3">
+                    <div class="shadow"></div>
+                    <div class="common-title">
+                        <h1 class="sub-title">konkurencyjne ceny</h1>
+                        <p class="line-title"></p>
+                        <p class="bottom-title">Mamy najlepsze ceny w regionie.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-3 p-0 m-0">
+                <div class="brick delivery common-title d-flex justify-content-end flex-column ps-3">
+                    <div class="shadow"></div>
+                    <div class="common-title">
+                        <h1 class="sub-title">szybka realizacja</h1>
+                        <p class="line-title"></p>
+                        <p class="bottom-title">Dostawy realizujemy do 24h.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-3 p-0 m-0">
+                <div class="brick transport common-title d-flex justify-content-end flex-column ps-3">
+                    <div class="shadow"></div>
+                    <div class="common-title">
+                        <h1 class="sub-title">własny transport</h1>
+                        <p class="line-title"></p>
+                        <p class="bottom-title">Posiadamy własny wyspecjalizowany transport.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
 
 
 

@@ -1,5 +1,6 @@
 .navbar {
     background-color: $dark-gray;
+    z-index: 100;
 
     .navbar-nav {
         .active {
@@ -11,10 +12,9 @@
 
         a {
             color: $light-gray;
-            transition: border-bottom .3s;
+            transition: border-bottom .3s, color .3s, text-shadow .3s;
 
             &:hover {
-                visibility: visible;
                 border-bottom: 1px solid $main-color;
                 color: $white;
                 text-shadow: 0 0 1px $white;
@@ -24,6 +24,8 @@
 }
 
 .hero {
+    padding-top: 56px;
+
     .hero-img {
         position: relative;
         background-image: url('/dist/img/hero/hero-page.jpg');
@@ -31,6 +33,10 @@
         background-position: 50% 75%;
         background-size: cover;
         z-index: 0;
+
+        .shadow {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
 
         .container {
             z-index: 10;
@@ -47,6 +53,43 @@
     }
 }
 
+.aboutus-bricks {
+
+    .common-title {
+        height: 40%;
+    }
+
+    .brick {
+        height: 350px;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+
+        .sub-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .advices {
+        background-image: url('/dist/img/aboutus/advices.jpg');
+
+    }
+
+    .cashier-clients {
+        background-image: url('/dist/img/aboutus/cashier-clients.jpg');
+    }
+
+    .delivery {
+        background-image: url('/dist/img/aboutus/delivery.jpg');
+    }
+
+    .transport {
+        background-image: url('/dist/img/aboutus/transport.jpg');
+    }
+}
+
 @media (max-width: 576px) {}
 
 
@@ -54,6 +97,32 @@
     .hero {
         .hero-img {
             background-image: url('/dist/img/hero/hero-page.min.jpg');
+        }
+    }
+
+    .aboutus-bricks {
+        .brick {
+            height: 400px;
+
+            .common-title {
+                height: 30%;
+            }
+        }
+
+        .advices {
+            background-image: url('/dist/img/aboutus/advices.min.jpg');
+        }
+
+        .cashier-clients {
+            background-image: url('/dist/img/aboutus/cashier-clients.min.jpg');
+        }
+
+        .delivery {
+            background-image: url('/dist/img/aboutus/delivery.min.jpg');
+        }
+
+        .transport {
+            background-image: url('/dist/img/aboutus/transport.jpg');
         }
     }
 }
